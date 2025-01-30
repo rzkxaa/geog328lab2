@@ -1,0 +1,53 @@
+/* this is the css for the body */
+body {
+    font-family: Arial, sans-serif;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  .w3-padding-64 {
+    padding-top: 64px !important;
+    padding-bottom: 64px !important;
+  }
+  table {
+    width: 100%;
+    margin: 0 auto;
+    border-collapse: collapse;
+  }
+  th, td {
+    padding: 10px;
+    text-align: left;
+  }
+
+/* this is the css for the cursor */
+body {
+    cursor: none;
+}
+
+a {
+    cursor: none;
+}
+
+.cursor {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet);
+    background-size: 400% 400%;
+    animation: rainbow 3s linear infinite, move 0.1s linear infinite;
+    pointer-events: none;
+}
+
+@keyframes rainbow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+@keyframes move {
+    0% { transform: translate(var(--x), var(--y)); }
+    100% { transform: translate(var(--x), var(--y)); }
+}
