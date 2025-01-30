@@ -1,46 +1,158 @@
 <!DOCTYPE html>
 <html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body class="w3-content" style="max-width:1300px">
+<link rel="stylesheet" href="cursor.css">
+<script src="something.js"></script>
 
-<head>
-    <title>Page Title</title>
-
-    <!-- Including the main.css file for styling -->
-    <link rel="stylesheet" href="css/main.css">
-
-    <!-- Including the Font Awesome CSS library for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-
-<body>
-
-    <!-- Navigation bar -->
-    <div class="topnav" id="myTopnav">
-        <!-- Links to different sections -->
-        <a href="index.html">Abstract</a>
-        <a href="section1.html">Section 1</a>
-
-        <!-- Active link pointing to the section2.html page -->
-        <a class="active" href="section2.html">Section 2</a>
-
-        <a href="section3.html">Section 3</a>
-        <a href="see_also.html">See Also</a>
-        <a href="references.html">References</a>
-
-        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links on smaller screens -->
-        <a href="javascript:void(0);" class="icon">
-            <i class="fa fa-bars"></i>
-        </a>
+<!-- First Grid: Logo & About -->
+<div class="w3-row">
+  <div class="w3-half w3-black w3-container w3-center" style="height:700px">
+    <div class="w3-padding-64">
+      <h1>Rizkika Ramadhanti</h1>
     </div>
-
-    <!-- Page content -->
-    <div class="content">
-        <!-- Section 2 content -->
-        This is section 2.
+    <div class="w3-padding-64">
+      <a href="aboutMe.html" class="w3-button w3-black w3-block w3-hover-blue-grey w3-padding-16">About Me</a>
+      <a href="photos.html" class="w3-button w3-black w3-block w3-hover-teal w3-padding-16">Photos</a>
+      <a href="resume.html" class="w3-button w3-black w3-block w3-hover-dark-grey w3-padding-16">Resume</a>
+      <a href="videos.html" class="w3-button w3-black w3-block w3-hover-brown w3-padding-16">Videos</a>
     </div>
+  </div>
+  <div class="w3-half w3-blue-grey w3-container" style="height:700px">
+    <div class="w3-padding-64 w3-center">
+        <h2>About Me</h2>
+            <p>My name is Rizkika Ramadhanti. I am currently a senior at the University of Washington
+                 in Seattle and pursuing undergraduate in Geography: Data Science with a minor in Informatics. 
+                 I have a few experience in the tech industry as a Quality Assurance Software Tester. 
+                 After graduating I want to pursue a career in Data Analyst. On the weekends, I work as a server at Din Tai Fung in Downtown Seattle. 
+                 What I like to do for fun is to play computer games and hangout with my Samoyed dog named Susu. </p>
+      <img src="profilepicture.jpg" class="w3-margin w3-circle" alt="Person" style="width:50%">
+      <div class="w3-left-align w3-padding-large">
+    </div>
+    </div>
+  </div>
+</div>
 
-    <!-- Including the main.js file for JavaScript functionality -->
-    <script src="js/main.js"></script>
+<!-- Second Grid: Work & Resume -->
+<div class="w3-row"> 
+    <!-- Photos Section -->
+    <div class="w3-half w3-light-grey w3-center" style="padding: 20px; box-sizing: border-box;" id="work">
+      <div class="w3-padding-64">
+        <h2>Photos</h2>
+      </div>
+      <!-- Responsive photo grid -->
+      <div class="w3-row" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px;">
+        <div class="w3-col" style="flex: 1 1 calc(50% - 20px); max-width: calc(50% - 20px);">
+          <img src="susu.jpg" style="width: 100%; height: auto; border-radius: 10px;">
+        </div>
+        <div class="w3-col" style="flex: 1 1 calc(50% - 20px); max-width: calc(50% - 20px);">
+          <img src="rainier.jpg" style="width: 100%; height: auto; border-radius: 10px;">
+        </div>
+        <div class="w3-col" style="flex: 1 1 calc(50% - 20px); max-width: calc(50% - 20px);">
+          <img src="bali.jpg" style="width: 100%; height: auto; border-radius: 10px;">
+        </div>
+        <div class="w3-col" style="flex: 1 1 calc(50% - 20px); max-width: calc(50% - 20px);">
+          <img src="hawaii.jpg" style="width: 100%; height: auto; border-radius: 10px;">
+        </div>
+      </div>
+    </div>
+  
+    <!-- Resume Section -->
+    <div class="w3-half w3-indigo w3-container" style="min-height: 1003px; margin: 0; padding: 20px; box-sizing: border-box;">
+      <div class="w3-padding-64 w3-center">
+        <h2>Resume</h2>
+        <table class="w3-table w3-responsive">
+          <tr>
+            <th>Year</th>
+            <th>Title</th>
+            <th>Where</th>
+          </tr>
+          <tr class="w3-white">
+            <td>2019-Present</td>
+            <td>Part-time Server</td>
+            <td>Din Tai Fung</td>
+          </tr>
+          <tr>
+            <td>2023-2025</td>
+            <td>Bachelor Degree in Geography: Data Science</td>
+            <td>University of Washington</td>
+          </tr>
+          <tr class="w3-white">
+            <td>2021-2022</td>
+            <td>Software Quality Assurance Tester</td>
+            <td>Microsoft</td>
+          </tr>
+          <tr >
+            <td>2020-2021</td>
+            <td>Software Development & Testing Student</td>
+            <td>Year Up Puget Sound</td>
+          </tr>
+          <tr class="w3-white">
+            <td>2018-2019</td>
+            <td>Sales Associate</td>
+            <td>GAP</td>
+          </tr>
+          <tr>
+            <td>2016-2019</td>
+            <td>Degree in Associates of Arts & Science</td>
+            <td>Bellevue College</td>
+          </tr>
+          <tr class="w3-white">
+            <td>2014-2018</td>
+            <td>High School Diploma</td>
+            <td>Newport High School</td>
+          </tr>
+        </table>
+        <br>
+        <a href="/files/RizkikasResume.pdf" class="w3-button w3-white w3-border w3-border-indigo w3-round-large">Link to Resume</a>
+      </div>
+    </div>
+  </div>
+
+<!-- Third Grid: Swing By & Contact -->
+<div class="w3-row" id="contact">
+  <div class="w3-half w3-dark-grey w3-container w3-center" style="height:700px">
+    <div class="w3-padding-64">
+      <h1>Videos</h1>
+      <div class="w3-padding-64">
+    </div>
+    <iframe width="auto" height="auto" src="https://www.youtube.com/embed/TIyUrW31orM?si=DIrNU36bDfCWb1As" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <br>
+    <iframe width="auto" height="auto" src="https://www.youtube.com/embed/paWE-GvDO1c?si=QD70szUJIW8Rxga8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+  </div>
+  <div class="w3-half w3-teal w3-container" style="height:700px">
+    <div class="w3-padding-64 w3-padding-large">
+      <h1>Contact</h1>
+      <br>
+      <br>
+      <p class="w3-opacity">GET IN TOUCH</p>
+      <form class="w3-container w3-card w3-padding-32 w3-white" action="/action_page.php" target="_blank">
+        <div class="w3-section">
+          <label>Name</label>
+          <input class="w3-input" style="width:100%;" type="text" required name="Name">
+        </div>
+        <div class="w3-section">
+          <label>Email</label>
+          <input class="w3-input" style="width:100%;" type="text" required name="Email">
+        </div>
+        <div class="w3-section">
+          <label>Message</label>
+          <input class="w3-input" style="width:100%;" type="text" required name="Message">
+        </div>
+        <button type="submit" class="w3-button w3-teal w3-right">Send</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-black w3-padding-16">
+  <p>Connect with me on <a href="https://www.linkedin.com/in/rizkika-ramadhanti-85a990140/" target="_blank">Linkedin</a></p>
+</footer>
 
 </body>
-
 </html>
